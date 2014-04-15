@@ -10,16 +10,15 @@ $(document).ready(function(){
         var am_pm = "PM";
         
         
+		if(hour < 12){
+            am_pm = "AM";
+        }
+		
         if(hour > 12){
             hour = hour - 12;
         }
- 
-        if(hour < 12){
-            am_pm = "AM";
-        }
-        
-        
-        
+
+
         hour = formatTime(hour);
         min  = formatTime(min);
         sec  = formatTime(sec);
