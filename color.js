@@ -9,8 +9,7 @@ $(document).ready(function(){
         var color = timeColor(hour, min, sec);
         var am_pm = "PM";
         
-        
-		if(hour < 12){
+        if(hour < 12){
             am_pm = "AM";
         }
 		
